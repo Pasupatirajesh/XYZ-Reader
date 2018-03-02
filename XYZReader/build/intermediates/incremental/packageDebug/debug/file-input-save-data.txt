@@ -1,0 +1,11 @@
+#Internal package file, do not edit.
+#Fri Mar 02 13:33:17 CST 2018
+1.base=/Users/SSubra27/Desktop/xyz-reader-starter-code-master-master/XYZReader/build/intermediates/transforms/dexMerger/debug/0
+0.baseType=DIRECTORY
+1.baseType=DIRECTORY
+count=2
+1.set=DEX
+0.path=Rosario-Regular.ttf
+0.set=ASSET
+0.base=/Users/SSubra27/Desktop/xyz-reader-starter-code-master-master/XYZReader/build/intermediates/assets/debug
+1.path=classes.dex
