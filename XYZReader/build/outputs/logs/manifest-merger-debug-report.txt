@@ -91,7 +91,7 @@ MERGED from [com.android.support:support-compat:25.4.0] /Users/SSubra27/.gradle/
 	android:allowBackup
 		ADDED from /Users/SSubra27/Desktop/xyz-reader-starter-code-master-master/XYZReader/src/main/AndroidManifest.xml:12:9-35
 	android:theme
-		ADDED from /Users/SSubra27/Desktop/xyz-reader-starter-code-master-master/XYZReader/src/main/AndroidManifest.xml:15:9-40
+		ADDED from /Users/SSubra27/Desktop/xyz-reader-starter-code-master-master/XYZReader/src/main/AndroidManifest.xml:15:9-43
 activity#com.example.xyzreader.ui.ArticleListActivity
 ADDED from /Users/SSubra27/Desktop/xyz-reader-starter-code-master-master/XYZReader/src/main/AndroidManifest.xml:17:9-24:20
 	android:label

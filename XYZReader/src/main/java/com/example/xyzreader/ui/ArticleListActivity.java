@@ -12,8 +12,10 @@ import android.database.Cursor;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.RequiresApi;
-import android.support.v4.app.FragmentActivity;
+import android.support.design.widget.CoordinatorLayout;
+import android.support.design.widget.Snackbar;
 import android.support.v4.widget.SwipeRefreshLayout;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
@@ -46,7 +48,7 @@ import butterknife.ButterKnife;
  * touched, lead to a {@link ArticleDetailActivity} representing item details. On tablets, the
  * activity presents a grid of items as cards.
  */
-public class ArticleListActivity extends FragmentActivity implements
+public class ArticleListActivity extends AppCompatActivity implements
         LoaderManager.LoaderCallbacks<Cursor> {
 
     private static final String TAG = ArticleListActivity.class.toString();
@@ -59,6 +61,9 @@ public class ArticleListActivity extends FragmentActivity implements
 
     @BindView(R.id.recycler_view)
     RecyclerView mRecyclerView;
+
+    @BindView(R.id.coordinator_layout)
+    CoordinatorLayout mCoordinatorLayout;
 
     public static int mPosition;
     private Adapter mAdapter;
@@ -94,6 +99,10 @@ public class ArticleListActivity extends FragmentActivity implements
             if (savedInstanceState== null){
                 refresh();
             }
+
+            Snackbar snackbar = Snackbar.make(mCoordinatorLayout, "Material Design",
+                    Snackbar.LENGTH_LONG);
+            snackbar.show();
         }
     }
 
